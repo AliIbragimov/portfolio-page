@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'r-medium';
+}
+
+body {
+    background-color: #171717;
+    color: white;
+}
+
+header {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer {
+    z-index: 1000;
+    background-color: #06090E;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header label {
+    font-size: 20px;
+}
+
+a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'r-thin';
+    transition: font-size 800ms;
+}
+
+header a:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 30px;
+    background: white;
+    width: 0;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header a:hover::after {
+    width: 100%;
+}
+
+header a:hover {
+    font-size: 20px;
+}
+
+.title-div {
+    background-image: url(./res/background.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 660px;
+    color: white;
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.click-git a {
+    all: unset;
+}
+
+.click-git a:hover {
+    all: unset;
+}
+
+.click-git a:hover::after {
+    all: unset;
+}
+
+.click-git {
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    width: 95px;
+    height: 30px;
+    transition: 800ms;
+    cursor: pointer;
+}
+
+.click-git:hover {
+    background-color: white;
+    color: #1606AF;
+}
+
+.line-tag {
+    position: fixed;
+    width: 2px;
+    height: 100%;
+    background-color: #ffff;
+    opacity:20%;
+    z-index: 980;
+    background-blend-mode:difference ;
+}
+
+.line-tag-gorizonal {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #ffff;
+    opacity:20%;
+    z-index: 980;
+    background-blend-mode: difference;
+}
+
+.right {
+    right: 18%;
+}
+
+.left {
+    left: 18%;
+}
+
+.title-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 124px;
+
+}
+
+.title-content div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "r-medium";
+}
+
+.title-text-mini {
+    position: relative;
+    font-size: 20px;
+    left: 50px;
+    padding-bottom: 8px;
+}
+
+.title-text {
+    font-size: 90px;
+}
+
+.content-text-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 19%;
+    padding-right: 19%;
+    padding-top: 160px;
+}
+
+.title-text-content {
+    font-family: 'r-light';
+    font-size: 18px;
+    width: 260px;
+    overflow-wrap: break-word;
+}
+
+.content-text-button label {
+    font-family: 'r-light';
+    font-size: 16px;
+    overflow-wrap: break-word;
+    padding-top: 8px;
+}
+
+.content-text-button button {
+    background-color: white;
+    border: solid white 2px;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    width: 240px;
+    height: 46px;
+    transition: 800ms;
+    cursor: pointer;
+    font-family: 'r-bold';
+    color: #014FBE;
+}
+
+.content-text-button button:hover {
+    background-color: transparent;
+    color: #ffff;
+    border: solid white 3px;
+}
+
+.content-text-button button a {
+    all: unset;
+}
+
+.content-text-button button a:hover {
+    all: unset;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portolio-div {
+    color: white;
+    padding-top: 80px;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 60px;
+}
+
+.portolio-div p {
+    width: 240px;
+}
+
+.title-portolio-text {
+    font-size: 46px;
+    font-family: 'r-bold';
+}
+
+.title-portolio div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.content-portolio {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.other-portfolio {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.other-portfolio p {
+    width: 345px;
+}
+
+.about-me-div {
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-bottom: 60px;
+    padding-top: 80px;
+}
+
+.content-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-about-me p {
+    font-size: 18px;
+    width: 760px;
+    font-family: 'r-light';
+    text-align: center;
+    padding: 15px;
+}
+
+.title-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.title-about-me-text {
+    font-size: 46px;
+    font-family: 'r-bold';
+}
+
+.text-thin {
+    font-size: 16px;
+    font-family: 'r-thin';
+}
+
+.contact-div {
+    padding-top: 80px;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 65px;
+}
+
+.type-contact {
+    font-family: 'r-medium';
+    font-size: 22px;
+}
+
+.contact-content {
+    padding-left: 10px;
+    font-family: 'r-light';
+    font-size: 22px;
+}
+
+.contact {
+    padding-left: 80px;
+}
+.contact div {
+    padding-bottom: 14px;
+}
+
+ul {
+    font-size: 20px;
+    list-style: none;
+}
+ul li {
+    font-size: 18px;
+    padding-top: 2px;
+}
+
+label a {
+    font-size: 20px;
+    font-family: 'r-light';
+}
+
+.other-contact {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.line-contact {
+    width: 1px;
+    height: 13px;
+    margin: 5px;
+    background-color: #ffff;
+    opacity:20%;
+    background-blend-mode: difference;
+}
+
+.scroll {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    background-color: #014FBE;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 0px 10px rgb(85, 85, 85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000px;
+}
+
+.scroll:hover {
+    background-color: #1606AF;
+}
+
+.scroll img {
+    padding-bottom: 6px;
+}
+
+.scroll_hide {
+    display: none;
+}
